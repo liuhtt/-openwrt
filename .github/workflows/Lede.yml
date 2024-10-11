@@ -2,7 +2,6 @@
 # REPO_TOKEN密匙制作教程：https://git.io/jm.md
 #
 #
-
 name: Lede
 on:
   workflow_dispatch:
@@ -10,11 +9,10 @@ on:
       REPO_BRANCH:
         description: '（大雕源码）请选择源码分支'
         required: true
-        default: '23.05'
+        default: 'master'
         type: choice
         options:
           - 'master'
-          - '23.05'
           - 'gl-ax1800'
       CONFIG_FILE:
         description: '请选择配置文件'
